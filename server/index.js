@@ -8,6 +8,8 @@ app.get('/', function (req, res) {
 
 })
 
+app.use('/'), express.static(path.join(__dirname, '../index.html'))
+
 const port = process.env.PORT || 4005
 
 app.listen(port, () => {
